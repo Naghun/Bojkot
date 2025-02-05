@@ -27,9 +27,33 @@
     
     <section class="main-content-section container">
         <div class="col-12 main-content-container d-flex justify-content-center align-items-start">
-            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-                <span class="close">&times;</span>
-                <img id="lightbox-img">
+            <div id="lightbox" class="lightbox" id="lightbox">
+                <span class="close" onclick="closeLightbox()">&times;</span>
+                <div class="img-container">
+                    <img id="lightbox-img">
+                </div>
+                <div class="details-container d-flex flex-column justify-content-start align-items-start">
+                    <h2>Naslov</h2>
+                    <p class="desc">
+                        <span class="desc-top">Opis:</span>
+                        <span class="desc-bottom">nesto</span>
+                    </p>
+                    <p class="town">
+                        <span class="town-top">Grad:</span>
+                        <span class="town-bottom">Sarajevo</span>
+                    </p>
+                    <div class="likes">
+                        <button id="like-button">Like</button>
+                        <p id="like-count">0 Lajkova</p>
+                    </div>
+                    <div id="comments-container" class="comments-container col-12 d-flex flex-column justify-content-start align-items-start">
+                        <h4>Komentari</h4>
+                        <textarea id="comment-input" placeholder="Ostavite komentar..." class="comments-area"></textarea>
+                        <input type="text" placeholder="Nadimak" class="nadimak">
+                        <button id="submit-comment" class="submit-comment">Dodaj komentar</button>
+                        <div id="comments-list" class="comments-list"></div>
+                    </div>
+                </div>
             </div>
             <div class="left-container d-flex flex-column justify-content-center align-items-center m-0 col-8">
                 <div class="top-left-container col-12 d-flex flex-column justify-content-center align-items-start">

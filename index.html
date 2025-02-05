@@ -114,12 +114,39 @@
                 <div class="swiper-slide">
                     <img src="./images/gallery/slika5.png" onclick="openLightbox(this)" />
                 </div>
+                <div class="swiper-slide">
+                    <img src="./images/gallery/slika4.png" onclick="openLightbox(this)" />
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-            <span class="close">&times;</span>
-            <img id="lightbox-img">
+        <div id="lightbox" class="lightbox">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <div class="img-container">
+                <img id="lightbox-img">
+            </div>
+            <div class="details-container d-flex flex-column justify-content-start align-items-start">
+                <h2>Naslov</h2>
+                <p class="desc">
+                    <span class="desc-top">Opis:</span>
+                    <span class="desc-bottom">nesto</span>
+                </p>
+                <p class="town">
+                    <span class="town-top">Grad:</span>
+                    <span class="town-bottom">Sarajevo</span>
+                </p>
+                <div class="likes">
+                    <button id="like-button">Like</button>
+                    <p id="like-count">0 Lajkova</p>
+                </div>
+                <div id="comments-container" class="comments-container col-12 d-flex flex-column justify-content-start align-items-start">
+                    <h4>Komentari</h4>
+                    <textarea id="comment-input" placeholder="Ostavite komentar..." class="comments-area"></textarea>
+                    <input type="text" placeholder="Nadimak" class="nadimak">
+                    <button id="submit-comment" class="submit-comment">Dodaj komentar</button>
+                    <div id="comments-list" class="comments-list"></div>
+                </div>
+            </div>
         </div>
     </section>
 
