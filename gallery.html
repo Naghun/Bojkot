@@ -25,14 +25,14 @@
         </div>
     </nav>
     
-    <section class="main-content-section container">
-        <div class="col-12 main-content-container d-flex justify-content-center align-items-start">
+    <section class="main-content-section">
+        <div class="main-content-container container d-flex justify-content-around align-items-start">
             <div id="lightbox" class="lightbox" id="lightbox">
-                <span class="close" onclick="closeLightbox()">&times;</span>
                 <div class="img-container">
                     <img id="lightbox-img">
                 </div>
                 <div class="details-container d-flex flex-column justify-content-start align-items-start">
+                    <span class="close" onclick="closeLightbox()">&times;</span>
                     <h2>Naslov</h2>
                     <p class="desc">
                         <span class="desc-top">Opis:</span>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="left-container d-flex flex-column justify-content-center align-items-center m-0 col-8">
+            <div class="left-container d-flex flex-column justify-content-center align-items-center m-0 col-7">
                 <div class="top-left-container col-12 d-flex flex-column justify-content-center align-items-start">
                     <h1 class="choose-city col-12 text-start">Odaberi grad</h1>
                     <select class="col-4" id="grad" name="grad" required>
@@ -83,9 +83,8 @@
                         <img src="images/gallery/slika6.png" onclick="openLightbox(this)">
                     </div>
                 </div>
-                <a class="text-start shame-list-link" href="anketa.html">Anketa za listu srama</a>
             </div>
-            <div class="right-container d-flex flex-column justify-content-center align-items-center m-0 p-0 col-4">
+            <div class="right-container d-flex flex-column justify-content-center align-items-center m-0 col-4">
                 <form action="upload.php" method="post" enctype="multipart/form-data" class="col-12 form-image d-flex flex-column justify-content-around align-items-around">
                     <h1 class="col-12 text-center">Objavi fotografiju</h1>
                     <div class="top-form d-flex flex-column justify-content-center align-items-center col-12">
@@ -110,7 +109,7 @@
                     </div>
                     <div class="bottom-form d-flex flex-column justify-content-center align-items-center col-12">
                         <label class="col-12" for="slika">Odaberi sliku *</label>
-                        <input class="col-12" type="file" id="slika" name="slika" accept="image/*" required>
+                        <input class="col-12 img-field" type="file" id="slika" name="slika" accept="image/*" required>
                     </div>
                     <div class="desc-form d-flex flex-column justify-content-center align-items-center col-12">
                         <label class="col-12" for="opis">Kratki opis</label>
