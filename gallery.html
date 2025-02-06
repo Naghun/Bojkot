@@ -8,7 +8,7 @@
     <title>Gallery</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img class="bojkot-logo" src="./images/bojkot-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,16 @@
                         <textarea id="comment-input" placeholder="Ostavite komentar..." class="comments-area"></textarea>
                         <input type="text" placeholder="Nadimak" class="nadimak">
                         <button id="submit-comment" class="submit-comment">Dodaj komentar</button>
-                        <div id="comments-list" class="comments-list"></div>
+                        <div id="comments-list" class="comments-list d-flex flex-column justify-content-center align-items-center">
+                            <div class="comment-solo d-flex flex-column justify-content-center align-items-start">
+                                <span>Nick</span>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, eligendi.</p>
+                            </div>
+                            <div class="comment-solo d-flex flex-column justify-content-center align-items-start">
+                                <span>Drugi</span>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nisi nemo ut voluptas delectus odit aliquid, doloribus quod vero facilis.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

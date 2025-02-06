@@ -16,25 +16,28 @@
     width: 100%;
     color: var(--footer-text);
     z-index: 22;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(197, 197, 197);
     a {
-        color: var(--primary-color);
+        color: black;
         transition: color 0.3s;
         font-weight: 700;
     }
     a:hover {
-        color: white;
+        color: rgb(77, 77, 77);
     }
     .bojkot-logo {
-        width: 100px;
-        aspect-ratio: 1/1;
+        width: 70px;
     }
 }
 .footer {
     margin-top: 0px !important;
     padding-top: 0px !important;
     height: 10dvh;
-    background-color: var(--footer-bg);
+    background-color: #181c1f;
     color: var(--footer-text);
+    border-top: 1px solid rgba(187, 187, 187, 0.288);
     a {
         color: var(--primary-color);
         transition: color 0.3s;
@@ -43,6 +46,7 @@
         color: var(--secondary-color);
     }
 }
+
 
 .main-content-section {
     padding: 20px 0px;
@@ -85,6 +89,7 @@
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 color: black;
                 position: relative;
+                overflow-y: auto;
                 .close {
                     position: absolute;
                     top: 20px;
@@ -168,6 +173,21 @@
                     .comments-list {
                         width: 100%;
                         border-top: 1px solid rgba(202, 202, 202, 0.5);
+                        .comment-solo {
+                            width: 100%;
+                            gap: 10px;
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            border-bottom: 1px solid rgba(160, 160, 160, 0.253);
+                            span {
+                                color: rgb(160, 160, 160);
+                                font-size: 14px;
+                            }
+                            p {
+                                margin-bottom: 0%;
+                                color: black;
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
             }

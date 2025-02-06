@@ -19,7 +19,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var imagesSwiper = new Swiper(".imagesSwiper", {
-  slidesPerView: 5,
+  slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
   pagination: {
